@@ -7,6 +7,9 @@
 
 using std::string;
 
+/*! Available binary operation types.  */
+enum CalculatorOperation {ADD, SUB, MULT, DIV, MODULO, UNDEF, NAN};
+
 class BaseCalculator {
 public:
     BaseCalculator();
@@ -36,20 +39,28 @@ public:
 
 
 private:    
-	double sub(double a, double b);
 
-      // TO DO 
+    // -------------------------------------------------------------------------
+   	double sub(double a, double b);
             
     /*! Misha:  naive version of add function. Uses operator+ (,) from std */
     double mult(const double left_param, const double right_param);
     
     double sum(double a, double b);
-    double div(const double numerator, const double denominator);
+     double div(const double numerator, const double denominator); 
     
     double modulo(const double x, const double y);
     int modulo(const int x, const int y);
-    std::string expr(std::string str);
+
+    // -------------------------------------------------------------------------
+
+    /*! For a given index evaluate type of the binary operation. */
+    enum CalculatorOperation get_operation(const int index);
     
+private:
+    std::string expr;
+    int index;
+
       // TO DO
       // .. add something
 };
