@@ -31,9 +31,14 @@ public:
     
     /*! Universal method to calc arbitrary expression */
     virtual double calc(const string & );
+
+private:
+            
+    /*! Misha:  naive version of add function. Uses operator+ (,) from std */
+    double mult(const double left_param, const double right_param);
     
-private:    
     double sum(double a, double b);
+      
       // TO DO 
       // .. add something
 };

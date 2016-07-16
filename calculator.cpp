@@ -27,6 +27,9 @@ double SimpleCalculator::calc(const std::string & inp_string ) {
 double SimpleCalculator::sum(double a, double b) {
     double c = a + b;
     return c;
+
+double SimpleCalculator::mult(const double left_param, const double right_param) {
+    return left_param + right_param;       
 }
 
 ///////////////////////////////////////////////////////////////////////////////
