@@ -38,6 +38,11 @@ public:
    
 
 
+
+private:   
+    std::string expr;
+    int index; 
+	double sub(double a, double b);
 private:    
 
     // -------------------------------------------------------------------------
@@ -51,6 +56,8 @@ private:
     
     double modulo(const double x, const double y);
     int modulo(const int x, const int y);
+    
+    double get_atom(void);
 
     // -------------------------------------------------------------------------
 
@@ -63,7 +70,7 @@ private:
 
       // TO DO
       // .. add something
-};
+}
 
 
 
