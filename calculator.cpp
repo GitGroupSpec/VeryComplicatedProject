@@ -58,6 +58,29 @@ double SimpleCalculator::sub(double a, double b) {
 
 ///////////////////////////////////////////////////////////////////////////////
 
+enum CalculatorOperation SimpleCalculator::get_operation(const int index) {
+     
+     if (expr[index] == '+') {
+         return ADD;
+     }
+     if (expr[index] == '-') {
+         return SUB;
+     }
+     if (expr[index] == '*') {
+         return MULT;
+     }
+     if (expr[index] == '/') {
+         return DIV;
+     }
+     if (expr[index] == '%') {
+         return MODULO;
+     }
+     
+     return  UNDEF;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
 // End of the file
 
 
