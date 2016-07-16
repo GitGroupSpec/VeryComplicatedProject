@@ -27,7 +27,7 @@ double SimpleCalculator::calc(const std::string & inp_string ) {
     return 0;
 }
 
-double  SimpleCalculator::div(double numerator, double denominator){
+double  SimpleCalculator::div(const double numerator, const double denominator){
     if (denominator != 0){
                     return numerator/denominator;
     } else {

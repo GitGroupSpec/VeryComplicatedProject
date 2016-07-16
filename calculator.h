@@ -30,10 +30,10 @@ public:
     
     /*! Universal method to calc arbitrary expression */
     virtual double calc(const string & );
-    
+   
 
 private:    
-    double div(double numerator, double denominator); 
+     double div(const double numerator, const double denominator); 
       // TO DO 
       // .. add something
 };
