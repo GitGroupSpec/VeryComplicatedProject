@@ -47,8 +47,7 @@ private:
     double mult(const double left_param, const double right_param);
     
     double sum(double a, double b);
-    
-    double div(const double numerator, const double denominator); 
+     double div(const double numerator, const double denominator); 
     
     double modulo(const double x, const double y);
     int modulo(const int x, const int y);

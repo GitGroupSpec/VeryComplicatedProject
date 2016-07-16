@@ -2,6 +2,7 @@
 #include "calculator.h"
 #include <iostream>
 #include <cstdlib>
+#include <string>
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -55,6 +56,33 @@ double SimpleCalculator::sub(double a, double b) {
     double c = a - b;
     return c;
 }
+
+std::string SimpleCalculator::expr(std::string str) {
+    double a=0, b=0;
+    int lengFirstNumber = 0;
+    double firstNumber = 0;
+    string firstSTRNumber = "";
+    
+    for (int i==0; i++; i<strleng(str)) {
+        
+        if isdigit(str[i]) {
+            lengFirstNumber++;
+        
+        } else {
+            
+            for (int k ==0; k++; k<=lengFirstNumber) {
+                firstSTRNumber += str[k];
+            }
+            
+            firstNumber = atof(firstSTRNumber);
+        }
+        
+        
+    }
+    
+}
+
+
 
 ///////////////////////////////////////////////////////////////////////////////
 
