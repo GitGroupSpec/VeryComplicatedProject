@@ -10,14 +10,15 @@ using std::string;
 class BaseCalculator {
 public:      
     BaseCalculator();
-    virtual ~BaseCalculator() = 0;
+    virtual ~BaseCalculator();
     
     /*! Universal method to calc arbitrary expression */
     virtual double calc(const string & input_expresseion) = 0;
     
-private:    
-      
-      // TO DO 
+private:
+    
+    
+      // TO DO
       // .. add something
 };
 
@@ -32,7 +33,7 @@ public:
     virtual double calc(const string & );
     
 private:    
-      
+    double sum(double a, double b);
       // TO DO 
       // .. add something
 };
