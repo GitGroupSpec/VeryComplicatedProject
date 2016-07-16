@@ -1,6 +1,6 @@
 
 #include "calculator.h"
-#include <iostream>
+
 #include <cstdlib>
 
 
@@ -31,7 +31,7 @@ double  SimpleCalculator::div(const double numerator, const double denominator){
                     return numerator/denominator;
     } else {
              //throw "division by zero";
-             std::cout << "division by zero";
+            // std::cout << "division by zero";
              return 0;
            }
 }
@@ -56,6 +56,31 @@ double SimpleCalculator::sub(double a, double b) {
     return c;
 }
 
+unsigned char is_number( char inp){
+ if ((inp >= '0') && (inp <= '9')){
+  return 1;
+ } else return 0;
+}
+ double SimpleCalculator::get_atom(void){
+   int i;
+   std::string tmp_str;
+   tmp_str.clear();
+   for (i = index; i < expr.length(); i++){
+     if (is_number(expr[i])){
+                            tmp_str+= expr[i];
+                            } else {
+                                     index = i;
+                                     break; 
+                                   }                            
+   } 
+  if (!tmp_str.empty()){        
+      return atof(tmp_str.c_str());
+  } else {
+    return 0;       
+  }
+                                
+}
+       
 ///////////////////////////////////////////////////////////////////////////////
 
 // End of the file
