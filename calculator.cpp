@@ -1,5 +1,9 @@
 
 #include "calculator.h"
+#include <iostream>
+#include <cstdlib>
+
+
 
 ///////////////////////////////////////////////////////////////////////////////
     
@@ -23,6 +27,15 @@ double SimpleCalculator::calc(const std::string & inp_string ) {
     return 0;
 }
 
+double  SimpleCalculator::div(double numerator, double denominator){
+    if (denominator != 0){
+                    return numerator/denominator;
+    } else {
+             //throw "division by zero";
+             std::cout << "division by zero";    
+             return 0;    
+           }
+}
 ///////////////////////////////////////////////////////////////////////////////
 
 // End of the file
