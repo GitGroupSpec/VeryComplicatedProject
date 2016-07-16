@@ -31,6 +31,7 @@ public:
     
     /*! Universal method to calc arbitrary expression */
     virtual double calc(const string & );
+   
 
 private:
             
@@ -38,7 +39,7 @@ private:
     double mult(const double left_param, const double right_param);
     
     double sum(double a, double b);
-      
+     double div(const double numerator, const double denominator); 
       // TO DO 
       // .. add something
 };
