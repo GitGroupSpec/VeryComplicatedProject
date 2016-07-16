@@ -34,6 +34,7 @@ public:
     
 private:    
     double sum(double a, double b);
+	double sub(double a, double b);
       // TO DO 
       // .. add something
 };

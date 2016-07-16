@@ -29,6 +29,11 @@ double SimpleCalculator::sum(double a, double b) {
     return c;
 }
 
+double SimpleCalculator::sub(double a, double b) {
+    double c = a - b;
+    return c;
+}
+
 ///////////////////////////////////////////////////////////////////////////////
 
 // End of the file
