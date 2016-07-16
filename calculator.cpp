@@ -51,6 +51,11 @@ int SimpleCalculator::modulo(const int x, const int y)
     return x%y;
 }
 
+double SimpleCalculator::sub(double a, double b) {
+    double c = a - b;
+    return c;
+}
+
 ///////////////////////////////////////////////////////////////////////////////
 
 // End of the file

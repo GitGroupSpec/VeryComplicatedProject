@@ -36,7 +36,8 @@ public:
 
 
 private:    
-      
+	double sub(double a, double b);
+
       // TO DO 
             
     /*! Misha:  naive version of add function. Uses operator+ (,) from std */
