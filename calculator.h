@@ -8,34 +8,38 @@
 using std::string;
 
 class BaseCalculator {
-public:      
+public:
     BaseCalculator();
     virtual ~BaseCalculator() = 0;
-    
+
     /*! Universal method to calc arbitrary expression */
     virtual double calc(const string & input_expresseion) = 0;
-    
-private:    
-      
-      // TO DO 
+
+private:
+
+      // TO DO
       // .. add something
 };
 
 ///////////////////////////////////////////////////////////////////////////////
 
 class SimpleCalculator : public BaseCalculator {
-public:      
+public:
     SimpleCalculator();
     virtual ~SimpleCalculator();
-    
+
     /*! Universal method to calc arbitrary expression */
     virtual double calc(const string & );
-    
-private:    
-      
-      // TO DO 
+
+
+private:
+    double modulo(const double x, const double y);
+    int modulo(const int x, const int y);
+      // TO DO
       // .. add something
 };
+
+
 
 ///////////////////////////////////////////////////////////////////////////////
 
